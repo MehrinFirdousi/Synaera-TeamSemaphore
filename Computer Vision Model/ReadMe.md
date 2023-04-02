@@ -12,6 +12,10 @@ The `Notebooks` folder contains the code for training the model and testing the 
 - `Real-time Testing Notebook`: Includes the code necessary to load the trained model and run real-time tests to convert sign actions to words using OpenCV.
 - `Main Notebook`: Contains the code and scripts for all the above notebooks and additional testing and parameter tuning.
 
+## Saved Models
+The `Saved Models` folder under `Notebooks` folder contains the h5 files of the trained cv models. These models have been trained with data from multiple people and on different words with a large number of videos.
+- `Model_13ws_4p_5fps_new.h5`: Final model that is used in the Android Application
+
 ## Scripts
 
 The `Scripts` folder contains the scripts for training the model. The code is provided, which allows for way to create the respective folders to Collect your own data for training. The notebook includes instructions for collecting data for training the model.

@@ -17,3 +17,22 @@ https://user-images.githubusercontent.com/88845742/229364607-ef0f263a-adcf-46dd-
 
 ### Transcript generation for video upload demo
 
+## How to use 
+
+### Pre-requisites
+* Install Android Studio latest version 
+* Android mobile device with minimum Android version 5.0
+
+### Option 1
+Clone this repository on your machine, navigate to 'Android App' directory and open the project in Android Studio
+
+```bash
+git clone https://github.com/MehrinFirdousi/Synaera-TeamSemaphore.git
+cd 'Android App'
+```
+
+### Option 2
+Directly install synaera-app.apk file on your Android device (located at the root of this repository)
+
+## Learn more
+https://synaera.wixsite.com/home

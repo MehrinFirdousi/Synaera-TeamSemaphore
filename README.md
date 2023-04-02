@@ -2,6 +2,22 @@
 
 Android application that performs sign language to text translation in real time
 
+## Table of Contents <!-- omit in toc -->
+- [Synaera-TeamSemaphore](#synaera-teamsemaphore)
+  - [Features](#features)
+  - [User guide](#user-guide)
+    - [On-boarding Screens and Login/Registration](#on-boarding-screens-and-loginregistration)
+    - [Real-time translation and chat demo](#real-time-translation-and-chat-demo)
+    - [Transcript generation for video upload demo](#transcript-generation-for-video-upload-demo)
+  - [How to use](#how-to-use)
+    - [Pre-requisites](#pre-requisites)
+    - [Option 1](#option-1)
+    - [Option 2](#option-2)
+  - [Learn more](#learn-more)
+    - [About us](#about-us)
+    - [More about our deep learning models development process](#more-about-our-deep-learning-models-development-process)
+
+
 ## Features
 
 * Real-time translation of sign language to text from phone camera
@@ -44,8 +60,8 @@ Directly install `synaera-app.apk` file on your Android device (located at the r
 
 ## Learn more
 
-### About us -
+### About us
 https://synaera.wixsite.com/home
 
-### More about our deep learning models development process - 
+### More about our deep learning models development process
 https://github.com/AdamJeddy/Grad-Project-Code

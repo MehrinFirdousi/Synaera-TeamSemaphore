@@ -19,17 +19,8 @@ Contains all the code for the video streaming server, including setting up of so
 - [Synaera-TeamSemaphore](#synaera-teamsemaphore)
   - [Features](#features)
   - [User guide](#user-guide)
-    - [On-boarding Screens and Login/Registration](#on-boarding-screens-and-loginregistration)
-    - [Real-time translation and chat demo](#real-time-translation-and-chat-demo)
-    - [Transcript generation for video upload demo](#transcript-generation-for-video-upload-demo)
   - [How to use](#how-to-use)
-    - [Pre-requisites](#pre-requisites)
-    - [Option 1](#option-1)
-    - [Option 2](#option-2)
   - [Learn more](#learn-more)
-    - [About us](#about-us)
-    - [More about our deep learning models development process](#more-about-our-deep-learning-models-development-process)
-
 
 ## Features
 

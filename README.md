@@ -2,6 +2,14 @@
 
 Android application that performs sign language to text translation in real time
 
+## Table of Contents <!-- omit in toc -->
+- [Project repository structure](#project-repository-structure)
+- [Features](#features)
+- [User guide](#user-guide)
+- [How to use](#how-to-use)
+- [Learn more](#learn-more)
+
+
 ## Project repository structure 
 ### Android App
 Contains Synaera app's code (Kotlin and Java), ready to be tested with the streaming server. The app requires internet connection and on launch, a session is established by the app client to our [cloud-based server](#server), which is then used to run the live translation service.
@@ -15,12 +23,6 @@ Contains all code and components related to training and testing of the NLP mode
 ### Server
 Contains all the code for the video streaming server, including setting up of socket connections to communicate with the Android app client, hosting the two deep learning models and performing pre/post processing of model input/output. This server is currently hosted on an Azure Cloud VM, but can also be run locally. For more info on how to test locally, see - 
 
-## Table of Contents <!-- omit in toc -->
-- [Synaera-TeamSemaphore](#synaera-teamsemaphore)
-  - [Features](#features)
-  - [User guide](#user-guide)
-  - [How to use](#how-to-use)
-  - [Learn more](#learn-more)
 
 ## Features
 
@@ -31,15 +33,19 @@ Contains all the code for the video streaming server, including setting up of so
 <img src="https://user-images.githubusercontent.com/88845742/229358780-b0ea867d-41a8-4d98-a03b-086c4d21f94f.jpg" width="334" height="744" />
 
 ## User guide 
-### On-boarding Screens and Login/Registration 
+### On-boarding Screens and Login/Registration steps
 
 
-### Real-time translation and chat demo
+https://user-images.githubusercontent.com/88845742/229374064-92112d25-e4f7-4133-821f-aacfbd8b0d7d.mp4
+
+
+
+### Real-time translation and Chat demo
 
 
 https://user-images.githubusercontent.com/88845742/229364607-ef0f263a-adcf-46dd-a5ea-c841af0e4427.mp4
 
-### Transcript generation for video upload demo
+### Transcript generation for Video Upload demo
 
 
 https://user-images.githubusercontent.com/88845742/229370785-60b00b32-db75-4e14-bb19-2f7725de8033.mp4
@@ -69,3 +75,6 @@ https://synaera.wixsite.com/home
 
 ### More about our deep learning models development process
 https://github.com/AdamJeddy/Grad-Project-Code
+
+### More about the server development process 
+https://github.com/MehrinFirdousi/Synaera-server

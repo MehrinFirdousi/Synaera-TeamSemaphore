@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verylightgrey"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/filesHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Video Uploads"
+        android:textSize="20sp"
+        android:textColor="@color/oldrose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadButton"
+        android:background="@drawable/upload_video_bg"
+        android:layout_margin="25dp"
+        android:text="Upload video of ASL signing to generate transcript"
+        android:textColor="@color/verylightgrey"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="16sp"
+        android:drawableTop="@drawable/outline_cloud_upload_24"
+        android:drawableTint="@color/verylightgrey"
+        android:padding="55dp"
+        app:layout_constraintTop_toBottomOf="@id/filesHeader"
+        app:backgroundTint="@color/charcoal"/>
+
+    <TextView
+        android:id="@+id/videoHeading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Recents"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/videosEditButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uploadButton"
+        app:layout_constraintBottom_toTopOf="@id/videoRV"/>
+
+    <ImageView
+        android:id="@+id/videosEditButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="25dp"
+        android:padding="10dp"
+        android:src="@drawable/outline_edit_24"
+        app:layout_constraintBottom_toBottomOf="@+id/videoHeading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/videoHeading"
+        app:layout_constraintTop_toTopOf="@+id/videoHeading"
+        app:tint="@color/oldrose" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/videoRV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/videoHeading" />
+
+    <ImageView
+        android:id="@+id/videosDeleteButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/baseline_delete_outline_24"
+        android:padding="10dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/delete_button_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

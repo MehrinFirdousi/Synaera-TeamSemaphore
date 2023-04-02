@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/notblack"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="640dp"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+<!--    <androidx.camera.view.PreviewView-->
+<!--        android:id="@+id/viewFinder2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/view_pager"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/info_button"
+        android:src="@drawable/outline_info_24"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:layout_marginHorizontal="40dp"
+        android:padding="10dp"
+        app:tint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewFinder"
+        android:contentDescription="@string/info_button" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/mute_button"
+        android:src="@drawable/outline_volume_up_24"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:padding="10dp"
+        android:layout_marginHorizontal="40dp"
+        app:tint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewFinder"
+        android:contentDescription="@string/mute" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/open_gallery_button"
+        android:src="@drawable/example_gallery_pic"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@id/recordCircle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/recordCircle"
+        app:layout_constraintBottom_toBottomOf="@id/recordCircle"
+        android:contentDescription="@string/open_gallery" />
+
+    <!--    <ImageButton-->
+    <!--        android:layout_width="85dp"-->
+    <!--        android:layout_height="85dp"-->
+    <!--        android:id="@+id/start_capture_button"-->
+    <!--        android:src="@drawable/outline_circle_24"-->
+    <!--        android:background="@android:color/transparent"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        app:tint="@color/white"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/bottom_nav_bar"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:contentDescription="@string/start_capture" />-->
+
+    <com.example.synaera.CircleView
+        android:id="@+id/recordCircle"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recordButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="@color/recordRed"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        app:contentPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/recordCircle"
+        app:layout_constraintLeft_toLeftOf="@id/recordCircle"
+        app:layout_constraintRight_toRightOf="@id/recordCircle"
+        app:layout_constraintTop_toTopOf="@id/recordCircle" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/flip_camera_button"
+        android:src="@drawable/outline_flip_camera_android_24"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:padding="10dp"
+        app:tint="@color/white"
+        app:layout_constraintTop_toTopOf="@id/recordCircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/recordCircle"
+        app:layout_constraintStart_toEndOf="@id/recordCircle"
+        android:contentDescription="@string/flip_camera" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/darkgrey"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_menu" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="@dimen/body_text_size"
+        android:background="@drawable/caption_bg"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/viewFinder"
+        app:layout_constraintBottom_toTopOf="@id/recordCircle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/info_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/info_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/personOutline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/person_outline_scaled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/viewFinder"
+        app:layout_constraintBottom_toBottomOf="@id/viewFinder"
+        app:tint="@color/white_trans"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/guideMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/position_tip"
+        android:textColor="@color/white_trans"
+        android:textSize="@dimen/body_text_size"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginHorizontal="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewFinder"
+        app:layout_constraintTop_toTopOf="@+id/viewFinder"
+        app:layout_constraintVertical_bias="0.7"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

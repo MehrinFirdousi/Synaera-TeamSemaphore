@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="darkgrey">#FF1f1f1f</color>
+    <color name="notblack">#FF121212</color>
+    <color name="black">#FF000000</color>
+    <color name="trans_black">#7F000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#FF6e6e6e</color>
+    <color name="lightGrey">#919191</color>
+    <color name="lightBlue">#FF81a7db</color>
+    <color name="moonstone">#FF58A4B0</color>
+
+    <color name="raisinblack">#FF3A2E39</color>
+    <color name="midgreen">#FF1E555C</color>
+    <color name="paledogwood">#FFF4D8CD</color>
+    <color name="charcoal">#FF373F51</color>
+    <color name="trans_charcoal">#7F373F51</color>
+    <color name="melon">#FFDAA49A</color>
+    <color name="buttonBlue">#007EB1</color>
+    <color name="bone">#FFE0DDCF</color>
+    <color name="verylightgrey">#FFF1F0EA</color>
+
+    <color name="oldrose">#ffa37774</color>
+    <color name="seashell">#fffcf0ee</color>
+    <color name="palegreen">#94BBBA</color>
+    <color name="feldgraulight">#6C8A89</color>
+    <color name="feldgrau">#FF466362</color>
+    <color name="columbia_blue">#ffc5d5e4</color>
+    <color name="spacecadet">#FF1B1B3A</color>
+
+    <color name="recordRed">#C32C49</color>
+    <color name="recordRedTrans">#8FEC133E</color>
+
+    <color name="inactive">#C4C4C4</color>
+    <color name="active">#50C2C9</color>
+
+    <color name="cameraBgColor"></color>
+    <color name="white_trans">#BAFFFFFF</color>
+</resources>

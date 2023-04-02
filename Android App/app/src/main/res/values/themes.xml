@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Synaera" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+<!--        <item name="android:windowTranslucentNavigation">true</item>-->
+        <item name="colorPrimary">@color/midgreen</item>
+        <!--        <item name="colorPrimary">@color/purple_500</item>-->
+        <item name="colorPrimaryVariant">@color/raisinblack</item>
+        <item name="colorOnPrimary">@color/paledogwood</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/melon</item>
+        <item name="colorSecondaryVariant">@color/feldgrau</item>
+        <item name="colorOnSecondary">@color/spacecadet</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

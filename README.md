@@ -10,6 +10,10 @@ Android application that performs sign language to text translation in real time
 
 <img src="https://user-images.githubusercontent.com/88845742/229358780-b0ea867d-41a8-4d98-a03b-086c4d21f94f.jpg" width="334" height="744" />
 
+## User guide 
+### On-boarding Screens and Login/Registration 
+
+
 ### Real-time translation and chat demo
 
 
@@ -19,7 +23,6 @@ https://user-images.githubusercontent.com/88845742/229364607-ef0f263a-adcf-46dd-
 
 
 https://user-images.githubusercontent.com/88845742/229370785-60b00b32-db75-4e14-bb19-2f7725de8033.mp4
-
 
 
 ## How to use 

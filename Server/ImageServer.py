@@ -9,7 +9,7 @@ from engineio.payload import Payload
 import cv_model
 import nlp_model
 
-# Default is 16 which can create a bootleneck for video streaming
+# Default is 16 which can create a bottleneck for video streaming
 Payload.max_decode_packets = 256
 
 sio = socketio.Server()
@@ -28,8 +28,7 @@ isAuth = False
 # Dummy in-memory key-value pairs user database for dummy authentication using 
 dummyUserDB = { 
 	# Add more users as needed
-	"user1": "pass1",
-	"user2": "pass2",
+	"user1": "pass1"
 	"Alice": "123",
 	"Bob": "456"
 }
@@ -157,6 +156,7 @@ def receiveVideoStream(sid, imageBytes, totalFrames):
 		t.start()
 		print("Thread started..")
 
+# Post processing NLP model output, correcting sentence punctuation, spaces and case
 def format_string(sentence):
 	sentence = sentence.strip()
 	sentence = re.sub(r"\s+", " ", sentence)
@@ -166,6 +166,7 @@ def format_string(sentence):
 	sentence = re.sub(r"(\?\.?)", "?", sentence)
 	return sentence
 
+# This is invoked by the client when a video is uploaded from their gallery 
 def processVideo():
 	# sio.emit(clientCallBackEvent, video_gloss_to_english(cv_model.run_model_on_video()))
 	transcript.append(video_gloss_to_english(cv_model.run_model_on_video()))

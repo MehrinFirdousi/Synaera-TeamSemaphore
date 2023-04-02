@@ -32,7 +32,7 @@ cd 'Android App'
 ```
 
 ### Option 2
-Directly install synaera-app.apk file on your Android device (located at the root of this repository)
+Directly install `synaera-app.apk` file on your Android device (located at the root of this repository)
 
 ## Learn more
 https://synaera.wixsite.com/home

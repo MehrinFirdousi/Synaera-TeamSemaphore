@@ -14,13 +14,13 @@ Android application that performs sign language to text translation in real time
 ### [Android App](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore/tree/main/Android%20App)
 Contains Synaera app's code (Kotlin and Java), ready to be tested with the streaming server. The app requires internet connection and on launch, a session is established by the app client to our [cloud-based server](#server), which is then used to run the live translation service.
 
-### Computer Vision Model
+### [Computer Vision Model](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore/tree/main/Computer%20Vision%20Model)
 Contains all code and components related to training and testing of the CV model used by the server to recognize human gestures/actions as ASL signs. The model is hosted by the [streaming server](#server). The signs detected by the CV model is represented in gloss notation, which will be processed further by the [NLP model](#natural-language-processing-model) to generate an English sentence.
 
-### Natural Language Processing Model
+### [Natural Language Processing Model](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore/tree/main/NLP%20Model)
 Contains all code and components related to training and testing of the NLP model used to translate ASL gloss to English. This model is hosted by the streaming server to perform live translation of ASL using the [CV model](#computer-vision-model)'s output.
 
-### Server
+### [Server](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore/blob/main/Server/ImageServer.py)
 Contains all the code for the video streaming server, including setting up of socket connections to communicate with the Android app client, hosting the two deep learning models and performing pre/post processing of model input/output. This server is currently hosted on an Azure Cloud VM, but can also be run locally. For more info on how to test locally, see - 
 
 

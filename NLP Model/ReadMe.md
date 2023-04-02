@@ -1,6 +1,6 @@
 # NLP Model - ASL to English  <!-- omit in toc -->
 
-This repository contains the necessary components to train and run a deep learning model for translating American Sign Language (ASL) to English.
+This folder contains the necessary components to train and run a deep learning model for translating American Sign Language (ASL) to English.
 
 These are the folders:
 

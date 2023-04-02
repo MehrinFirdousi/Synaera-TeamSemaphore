@@ -17,6 +17,11 @@ https://user-images.githubusercontent.com/88845742/229364607-ef0f263a-adcf-46dd-
 
 ### Transcript generation for video upload demo
 
+
+https://user-images.githubusercontent.com/88845742/229370785-60b00b32-db75-4e14-bb19-2f7725de8033.mp4
+
+
+
 ## How to use 
 
 ### Pre-requisites
@@ -39,5 +44,5 @@ Directly install `synaera-app.apk` file on your Android device (located at the r
 ### About us -
 https://synaera.wixsite.com/home
 
-### More about our deep learning technology - 
+### More about our deep learning models development process - 
 https://github.com/AdamJeddy/Grad-Project-Code

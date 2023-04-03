@@ -5,7 +5,7 @@ Streaming server that receives live video frames from an Android device's camera
 On startup, the server loads the two pre-trained deep learning models, CV model (`Model_13ws_4p_5fps_new.h5`) and NLP model (`nmt_weights_v8.h5`) and these instances are used for all requests throughout the duration of the server's uptime. The server then initializes all socket parameters, sets up socket listeners for session establishment with the Android client and for processing translation requests from the client. The session is initiated by the client, will last as long as the app is active on the user's device and is terminated on internet connection interrupt or when the app is closed.
 
 ## Steps for one translation session
-* When the user starts recording from the camera screen of the app, the Android client triggers the `receiveImage` event on the server (see [`ImageServer.py`](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore/blob/main/Server/ImageServer.py)) to send the video frames one by one. Here the frame is processed in a new thread and prepared for the CV model.
+* When the user starts recording from the camera screen of the app, the Android client triggers the `receiveImage` event on the server (see [`ImageServer.py`](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore/blob/main/Server/ImageServer.py/#L128)) to send the video frames one by one. Here the frame is processed in a new thread and prepared for the CV model.
 * Using mediapipe holistic, keypoints are identified on the person's face, hands and pose, which are extracted from each frame and stored as xyz values. Note that the server never stores the images after this extraction is performed.
 * The xyz values are stored in a sequence and sent to the CV model, where the sign/action performed by the user is detected. 
 * Every new prediction made by the CV model is stored in a sentence array. As soon as no sign is performed (user's hands are no longer visible in the camera frame) or the user stops recording, the sentence array is sent to the NLP model to form an English sentence from the predicted ASL signs. 
@@ -18,3 +18,30 @@ On startup, the server loads the two pre-trained deep learning models, CV model 
 
 # How to run
 This server is currently hosted on an Azure Cloud VM, but can also be run locally. 
+
+## Pre-requisites 
+* Python version between 3.7-3.10
+
+## Running locally
+Clone this repository on your machine and navigate to the `Server` directory
+```bash
+git clone https://github.com/MehrinFirdousi/Synaera-TeamSemaphore.git
+cd Server
+```
+Install dependencies
+```bash
+pip install -r requirements.txt
+```
+Start server
+```bash
+python3 ImageServer.py
+```
+[Optional] Start server in debug mode and view frames being received by the server 
+```bash
+python3 ImageServer.py -d
+```
+## Note
+Since this is a client-server use case, to test the server locally you must have the [Synaera app](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore) installed and running on your Android device. The device must be connected to the internet and on the same LAN as the server. Additionally, this server application is meant to be run on a dedicated cloud-based server, so when testing locally the translation will be relatively slow since PCs are not powerful enough to run the intensive ML operations involved in the translation process.
+
+# Learn more about the server's development process
+https://github.com/MehrinFirdousi/Synaera-server

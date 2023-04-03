@@ -144,8 +144,8 @@ def receiveImage(sid, imageBytes, clientCallBackEvent):
 			data = {'result': real_text, 'isGloss': False}
 			sio.emit(clientCallBackEvent, data)
 			print("real result:", real_text)
-	# if(isDisplay):
-	# 	displayImage(activeSessions[sid], bytes(imageBytes))
+	if(isDisplay):
+		displayImage(activeSessions[sid], bytes(imageBytes))
 
 @sio.event
 def receiveVideoStream(sid, imageBytes, totalFrames):
@@ -232,9 +232,9 @@ def displayImage(username, imageBytes):
 	cv_model.frameCount.append(1)
 	print("received ", imgNo)
 	# Show image after decoded
-	# cv2.namedWindow(username, cv2.WINDOW_AUTOSIZE)
-	# cv2.imshow(username, img)
-	# cv2.waitKey(1)
+	cv2.namedWindow(username, cv2.WINDOW_AUTOSIZE)
+	cv2.imshow(username, img)
+	cv2.waitKey(1)
 
 def executeCommandArgs(argv):
 	global ip, port, isDisplay, isAuth

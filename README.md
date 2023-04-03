@@ -23,7 +23,7 @@ Contains all code and components related to training and testing of the CV model
 ### [Natural Language Processing Model](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore/tree/main/NLP%20Model)
 Contains all code and components related to training and testing of the NLP model used to translate ASL gloss to English. This model is hosted by the streaming server to perform live translation of ASL using the [CV model](#computer-vision-model)'s output.
 
-### [Server](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore/blob/main/Server/ImageServer.py)
+### [Server](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore/blob/main/Server)
 Contains all the code for the video streaming server, including setting up of socket connections to communicate with the Android app client, hosting the two deep learning models and performing pre/post processing of model input/output. This server is currently hosted on an Azure Cloud VM, but can also be run locally. For more info on how to test locally, see - 
 
 

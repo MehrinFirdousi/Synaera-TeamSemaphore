@@ -12,7 +12,7 @@ Android application that performs sign language to text translation in real time
 
 ## Project repository structure 
 
-Synaera's development process involved 4 main components; Android app running the sign language translation service, Computer Vision model for human gesture/action recognition, Natural Language Processing model for sentence formation from predicted signs and finally the streaming server that connects all the above components and allows them to communicate over the network. 
+Synaera's development process involved 4 main components; Android app running the sign language translation service among other features, Computer Vision model for human gesture/action recognition, Natural Language Processing model for sentence formation from predicted signs and finally the streaming server that connects all the above components and allows them to communicate over the network. 
 
 ### [Android App](https://github.com/MehrinFirdousi/Synaera-TeamSemaphore/tree/main/Android%20App)
 Contains Synaera app's code (Kotlin and Java), ready to be tested with the streaming server. The app requires internet connection and on launch, a session is established by the app client to our [cloud-based server](#server), which is then used to run the live translation service.

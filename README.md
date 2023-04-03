@@ -33,7 +33,7 @@ Contains all the code for the video streaming server, including setting up of so
 * Chat with sign language user 
 * Upload video containing ASL signing and generate transcript
 
-<img src="https://user-images.githubusercontent.com/88845742/229358780-b0ea867d-41a8-4d98-a03b-086c4d21f94f.jpg" width="334" height="744" />
+  <img src="https://user-images.githubusercontent.com/88845742/229358780-b0ea867d-41a8-4d98-a03b-086c4d21f94f.jpg" width="334" height="744" />
 
 ## User guide 
 ### On-boarding Screens and Login/Registration steps

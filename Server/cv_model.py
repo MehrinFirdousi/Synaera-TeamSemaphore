@@ -201,7 +201,7 @@ def run_model_dup_check(imageBytes):
 	frameCount.append(1)
 	imgNo = str(len(frameCount))
 	print("received", imgNo)
-	cv2.imwrite('frames/img'+imgNo+'.jpg', frame)
+# 	cv2.imwrite('frames/img'+imgNo+'.jpg', frame)
 	
 	last_frames = sequence[-frame_rate:]
 	# if len(last_frames) == frame_rate:

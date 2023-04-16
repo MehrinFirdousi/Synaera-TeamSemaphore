@@ -3,12 +3,25 @@
 Android application that performs sign language to text translation in real time
 
 ## Table of Contents <!-- omit in toc -->
+- [Our Team](#our-team)
 - [Project repository structure](#project-repository-structure)
 - [Features](#features)
 - [User guide](#user-guide)
 - [How to use](#how-to-use)
 - [Learn more](#learn-more)
 
+## Our Team
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/MehrinFirdousi"><img src="https://avatars.githubusercontent.com/u/88845742?v=4" width="100px;"/><br/><b>Mehrin Firdousi</b></a><br/>Team Lead. App and Server development</td>
+      <td align="center"><a href="https://github.com/AlbusTheDev"><img src="https://avatars.githubusercontent.com/u/39058660?v=4" width="100px;"/><br/><b>Qusai Wael</b></a><br/>Application development</td>
+      <td align="center"><a href="https://github.com/aa055"><img src="https://avatars.githubusercontent.com/u/64472870?v=4" width="100px;"/><br/><b>Aamir Ali</b></a><br/>Computer Vision model development</td>
+      <td align="center"><a href="https://github.com/AdamJeddy"><img src="https://avatars.githubusercontent.com/u/58102753?v=4" width="100px;"/><br/><b>Adam Ahsan</b></a><br/>NLP model development</td>
+      <td align="center"><a href="https://github.com/ayeshajr"><img src="https://avatars.githubusercontent.com/u/122777235?v=4" width="100px;"/><br/><b>Ayesha Hassan</b></a><br/>NLP model development & dataset preparation</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Project repository structure 
 
